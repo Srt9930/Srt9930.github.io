@@ -12,7 +12,8 @@
   <div class="content">
     <div id="top"></div>
     <nav id="desktop-nav">
-      <div class="logo">Srtexpo</div>
+      <div class="logo" id="logo"><a href="#top" style="text-decoration: none; color: inherit;">Srtexpo</a>
+      </div>
       <div>
         <ul class="nav-links">
           <li><a href="#about">About</a></li>
@@ -23,7 +24,8 @@
       </div>
     </nav>
     <nav id="hamburger-nav">
-      <div class="logo">Srtexpo</div>
+      <div class="logo" id="logo"><a href="#top" style="text-decoration: none; color: inherit;">Srtexpo</a>
+      </div>
       <div class="hamburger-menu">
         <div class="hamburger-icon" onclick="toggleMenu()">
           <span></span>
@@ -39,9 +41,9 @@
       </div>
     </nav>
     <section id="profile">
-      <div class="section__pic-container">
-        <!-- <img src="./assets/profile-pic.png" alt="John Doe profile picture" /> -->
-      </div>
+      <!-- <div class="section__pic-container">
+        <img src="./assets/profile-pic.png" alt="John Doe profile picture" /> 
+      </div> -->
       <div class="section__text">
         <p class="section__text__p1">Hello, I'm</p>
         <h1 class="title">Shreyansh</h1>
@@ -69,22 +71,26 @@
             src="./assets/github.png"
             alt="My Github profile"
             class="icon"
-         onclick="window.open('https://github.com/Srt9930/About-me/', '_blank')"
+         onclick="window.open('https://github.com/Srt9930/About-me', '_blank')"
           />
         </div>
       </div>
+
+      <img src="./assets/arrow.png" alt="Down Arrow" id="down-arrow" class="down-arrow" />
+
     </section>
     <section id="about">
       <p class="section__text__p1">Get To Know More</p>
       <h1 class="title">About Me</h1>
-      <!-- <div class="section-container">
+       <!-- <div class="section-container">
         <div class="section__pic-container">
           <img
             src="./assets/about-pic.png"
             alt="Profile picture"
             class="about-pic"
           />
-        </div> -->
+        </div>  
+      </div> -->
         <div class="about-details-container">
           <div class="about-containers">
             <div class="details-container">
@@ -140,7 +146,7 @@
             </div>
           </div>
         </div>
-      </div>
+      
       <img
         src="./assets/arrow.png"
         alt="Arrow icon"
@@ -558,7 +564,7 @@
       <nav>
         <div class="nav-links-container">
           <ul class="nav-links">
-            <li><a href="#top">Top</a></li>
+            <li><a href="#top"><img class="up-arrow-img" src="./assets/arrow-up.png"/></a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#experience">Experience</a></li>
             <li><a href="#projects">Projects</a></li>
